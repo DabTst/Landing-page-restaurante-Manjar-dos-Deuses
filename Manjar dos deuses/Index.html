@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjar dos deuses</title>
+
+    <!--Css Link-->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header">
+        <a id="nome" href="#"> <span>Manjar</span> dos Deuses</a>
+
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#reservation">Reservas</a></li>
+            <li><a href="#contacto">Contactos</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <h1 id="call">Boa comida, Bom ambiente</h1>
+        <p id="call-description">Seja Bem vindo ao restaurante Manjar dos deuses. Voçê poderá encontrar mais detalhes sobre nosso estabelecimento abaixo e os nossos serviços.</p>
+        <button id="btn" type="button">Saber Mais</button>
+    </section>
+
+    <section id="about">
+        <div id="story">
+            <div id="about-img">
+                <img src="./Img/InternoSpace.jpg" alt="espaços" class="img-story">
+                <img src="./Img/Comida.jpg" alt="comida" class="img-story">
+                <img src="./Img/camarao.jpg" alt="espaço" class="img-story">
+                <img src="./Img/go263128.jpg" alt="comida" class="img-story">
+            </div>
+            <div id="history">
+                <h2>Sobre Manjar dos Deuses</h2>
+                <br>
+                <p>
+                    Fundado em 2009. Somos um restaurante <br> especializado em comida europeia, com <br> grande destaque a culinária portuguesa.
+                    Dispomos de serviços de catering e emendas. <br>
+                    Servimos todas as refeiçoes, desde o pequeno <br> almoço até o jantar. <br>
+                    Dipomos de espaços internos, externos <br> e uma esplanada com vista para a estrada.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <h3>Galeria</h3>
+        <p id="gallery-details">
+            Acompanhe abaixo algumas das nossas
+            especialidades e inspire-se para seu pedido de hoje
+        </p>
+        <div id="gallery-img">
+            <div class="gallery">
+                <img class="img-plate" src="./Img/Batata&Bife.jpg" alt="3">
+                <p class="plate-name">Batata e Bife</p>
+            </div>
+            <div class="gallery">
+                <img class="img-plate" src="./Img/bife.jpg" alt="4">
+                <p class="plate-name"> Bife</p>
+            </div>
+            <div class="gallery">
+                <img class="img-plate" src="./Img/Acerola.jpg" alt="5">
+                <p class="plate-name"> Acerola</p>
+            </div>
+            <div class="gallery">
+                <img class="img-plate" src="./Img/Lulas recheadas.jpg" alt="6">
+                <p class="plate-name"> Lulas recheadas</p>
+            </div>
+            <div class="gallery">
+                <img class="img-plate" src="./Img/Lulas.jpg" alt="7">
+                <p class="plate-name"> Lulas</p>
+            </div>
+            <div class="gallery">
+                <img class="img-plate" src="./Img/Ensopado.jpg" alt="8">
+                <p class="plate-name">Ensopado</p>
+            </div>
+            <div class="gallery">
+                <img class="img-plate" src="./Img/Salada Negra.jpg" alt="9">
+                <p class="plate-name">Salada Negra</p>
+            </div>
+            <div class="gallery">
+                <img class="img-plate" src="./Img/tornedo.jpg" alt="10">
+                <p class="plate-name">Tornedo</p>
+            </div>
+            <div class="gallery">
+                <img class="img-plate" src="./Img/Salada.jpg" alt="11">
+                <p class="plate-name">Salada</p>
+            </div>
+            <div class="gallery" id="last">
+                <img class="img-plate" src="./Img/caril-de-camarao.jpg" alt="12">
+                <p class="plate-name">Caril de Camarão</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation">
+        <div id="reservation-img">
+            <img src="./Img/manjar-dos-deuses.jpg" alt="MD" id="reserve">
+        </div>
+        <div id="reservation-cont">
+            <form id="form">
+                <h4>Faça sua reserva</h4> <br>
+                <label for="name">Nome:</label> <br>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome"> <br>
+                <label for="name">Apelido:</label>  <br>
+                <input type="text" name="surname" id="surname" placeholder="Digite seu Apelido"> <br>
+                <label for="email">Contacto:</label> <br>
+                <input type="text" name="number" id="contact" placeholder="Digite seu Contacto" > <br>
+                <label for="time">Hora da reserva:</label>
+                <input type="time" name="time" id="time"> <br>
+                <label for="number">Mesa para:</label>
+                <input type="number" name="num" id="num" max="6" min="1"> <br>
+                <label for="Ambiente">Local de reserva:</label>
+                <select name="local" id="local">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Out">Externo</option>
+                    <option value="inside">Interno</option>
+                    <option value="Living-place">Esplanada</option>
+                </select>
+                <input id="btn" type="button" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <section id="contacto">
+        <h5>Contacte-nos</h5>
+        <div class="social">
+            <a href="#"><img src="./img/facebook-colorido.png" alt="Facebook"></a> 
+            <a href="#"><img src="./img/instagram-colorido.png" alt="Instagram"></a> 
+        </div>
+        <p id="local">Avenida Julius Nherere, N.162, Maputo 1100, Moçambique</p>
+        <p id="footer">
+           Manjar dos Deuses &COPY; 2024 <br>
+            Maputo, Moçambique 
+        </p>
+    </section>
+    
+</body>
+</html>

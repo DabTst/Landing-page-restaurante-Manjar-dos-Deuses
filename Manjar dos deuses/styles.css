@@ -1,0 +1,519 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: rgb(29, 28, 28);
+    --bg: rgb(48, 47, 47);
+    --color:rgb(236, 165, 59) ;
+    --text-color: #fff;
+
+    --title: 3rem;
+    --txt: 0.4rem
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    padding:0px 0px;
+}
+
+#header{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2px 10%;
+    text-align: center;
+    background-color: var(--bg);
+    backdrop-filter: blur(7px);
+}
+
+ul{
+    justify-content: space-between;
+    display: flex;
+    padding: 2%;
+}
+
+li{
+    padding-left: 5%;
+    text-decoration: none;
+    list-style: none;
+}
+
+li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+li a:hover{
+    color: var(--color);
+    text-decoration: underline 2px solid #fff;
+    transition: 0.4s ease-in;
+}
+li a.active{
+    color: var(--color);
+}
+span{
+    color: var(--color);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+#nome{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+/*Home*/
+
+#home{
+    background-image: linear-gradient( rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(./Img/manjar-dos-deuses-wide.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 20% 15%;
+    text-align: center;
+}
+
+#call{
+    color: var(--text-color);
+    font-weight: 800;
+    font-size:3rem ;
+    padding-bottom: 3%;
+}
+
+#call-description{
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 300;
+    /*backdrop-filter: blur(2px);*/
+    padding-bottom: 3%;
+}
+
+#btn{
+    padding: 2%;
+    color: black;
+    font-size: 1em;
+    background-color: var(--color);
+    font-weight: 800;
+    transition: 0.5s ease-in-out;
+    border: none;
+    border-radius: 8%;
+    margin: 3%;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #fff;
+    font-weight: 700;
+}
+
+/*Sobre or About section*/
+
+#about{
+    padding: 10% 10%;
+    display: flex;
+    max-width: 100%;
+}
+
+#story{
+display: flex;
+}
+
+.img-story{
+    width: 20vw;
+    height: 30vh;
+    border: 5px solid transparent;
+    box-shadow: 2px 3px 4px var(--color);
+}
+
+#history{
+    padding-top: 9%;
+}
+#history p{
+    line-height: 1.5em;
+    color: #fff;
+    font-weight: 400;
+    font-style: italic
+}
+#history h2{
+    color: var(--color);
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+/*Gallery*/
+
+#gallery{
+    padding: 5% 5%;
+    text-align: center;
+    height: auto;
+    background-color: var(--bg);
+}
+
+#gallery h3{
+    color: var(--color);
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+#gallery-details{
+    color: #fff;
+
+}
+
+#gallery-img{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 6%;
+}
+
+.gallery{
+    padding:2% 2%;
+    justify-content: space-between;
+    background-size: cover;
+}
+.img-plate{
+    width: 12vw;
+    height: 24vh;
+    border-radius: 5%;
+}
+
+.plate-name{
+    color: #fff;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+/*Reservas*/
+
+#reservation{
+    display: flex;
+    padding: 5% 5%;
+    margin: 0 8%;
+}
+#reservation-cont{
+    border: 3px solid #fff;
+    padding: 2%;
+    box-shadow: 2px 2px 4px var(--color);
+}
+
+#reservation-img{
+    margin-right: 10%;
+    margin-top: 3%;
+}
+#reserve{
+    width: 40vw;
+    height: 60vh;
+}
+#reservation-form{
+    display: inline-block;
+    flex-direction: column;
+}
+
+#form{
+    display: inline;
+    padding: 2%;
+}
+h4{
+    color: var(--color);
+    font-weight: 800;
+    font-size: 1.7em;
+}
+label{
+    margin: 2%;
+    padding: 2%;
+    color: #fff;
+    font-weight: 500;
+}
+
+input{
+    padding-right: 5%;
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+/*contact*/
+#contacto{
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(./Img/manjar-dos-deuses-wide.jpg);
+    height: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+#contacto h5{
+    color: var(--color);
+    font-size: 1.8em;
+    font-weight: 800;
+}
+#footer{
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-top: 2%;
+}
+
+.social{
+    display: flex;
+    text-align: center;
+    height: 15vh;
+    background-color: var(--black);
+    justify-content: center;
+}
+
+.social a img{
+    width: 40px;
+    height: 40px;
+    margin: 2px 2%;
+    transition: all .5s ease-in;
+}
+.social a img:hover{
+    transform: translateY(-3px);
+}
+.social a{
+    margin: 1px 1%;
+}
+#contacto #local{
+    color: var(--text-color);
+}
+
+
+/*Responisvidade*/
+ @media( max-width: 778px){
+    #header{
+        justify-content: left;
+    }
+    ul{
+        padding-top: 7%;
+    }
+    .img-story{
+        width: 20vw;
+        height: 20vh;
+    }
+    #history{
+        padding-top: 5%;
+    }
+    #gallery{
+        padding: 1% 1%;
+        height: auto;
+    }
+    #gallery-details{
+        font-size: .9rem;
+    }
+    #gallery-img{
+        margin-left: 6%;
+    }
+
+    .plate-name{
+        font-size: .8em;
+    }
+    #reservation{
+        padding: 2% 2%;
+        margin: 0 5%;
+        text-align: center;
+    }
+    label{
+        margin: 1%;
+        padding: 1%
+    }
+    input{
+        padding-right: 2%;
+        padding: 1%;
+        margin-bottom: 2%;
+    }
+ }
+
+ @media (max-width: 430px){
+    #header{
+        display: block;
+        text-align: center;
+    }
+    ul{
+        display: block;
+    }
+    #home{
+        padding-top: 43%;
+        text-align: center;
+        height: 110vh;
+    }
+    #about{
+        display: block;
+        padding: 5% 3%;
+    } #story{
+        display: block;
+        text-align: center;
+    }
+    #gallery h3{
+        margin: 2%;
+    }
+    #gallery-img{
+        display: block;
+        margin: 1px 1%;
+    }
+
+    .img-plate{
+        width: 45vw;
+        height: 35vh;
+    }
+    #reservation{
+        display: inline;
+    }
+    #reservation-img{
+        display: none;
+    }
+
+    label{
+        margin: 1%;
+        padding: 1%
+    }
+    input{
+        padding-right: 1%;
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    #reservation-cont{
+        border:0;
+        padding: 2%;
+        box-shadow: 2px 2px 4px var(--color);
+    }
+    #form{
+        padding: 0 0;
+    }
+}
+    @media (max-width: 500px){
+        #header{
+            display: block;
+            text-align: center;
+        }
+        ul{
+            display: block;
+        }
+        #home{
+            padding-top: 43%;
+            text-align: center;
+            height: 110vh;
+        }
+        #about{
+            display: block;
+            padding: 5% 3%;
+        } #story{
+            display: block;
+            text-align: center;
+        }
+        #gallery h3{
+            margin: 2%;
+        }
+        #gallery-img{
+            display: inline;
+        }
+    
+        .img-plate{
+            width: 50vw;
+            height: 45vh;
+        }
+        #reservation{
+            display: inline;
+        }
+        #reservation-img{
+            display: none;
+        }
+        label{
+            margin: 1%;
+            padding: 1%
+        }
+        input{
+            padding-right: 1%;
+            padding: 1%;
+            margin-bottom: 1%;
+        }
+        #reservation-cont{
+            border:0;
+            padding: 2%;
+            box-shadow: 2px 2px 4px var(--color);
+        }
+        #form{
+            padding: 0 0;
+        }
+    }
+    @media (max-width: 600px){
+        #header{
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+        }
+        ul{
+            display: block;
+            flex-direction: column;
+            padding: 2%  1px;
+        }
+        ul li{
+            margin: 4% 1px;
+        }
+        #home{
+            padding-top: 43%;
+            text-align: center;
+            height: auto;
+        }
+        #about{
+            display: block;
+            padding: 5% 3%;
+        } 
+        #story{
+            display: block;
+            text-align: center;
+            justify-content: space-around;
+        }
+
+        #gallery{
+            height: auto;
+        }
+        #gallery h3{
+            margin-left: 5%;
+        }
+        #last{
+            /*display: none;*/
+        }
+        #gallery-img{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .img-plate{
+            width: 25vw;
+            height: 25vh;
+        }
+        #reservation{
+            display: inline;
+        }
+        #reservation-img{
+            display: none;
+        }
+        label{
+            margin: 1%;
+            padding: 1%
+        }
+        input{
+            padding-right: 1%;
+            padding: 1%;
+            margin-bottom: 1%;
+        }
+        #reservation-cont{
+            border:0;
+            padding: 2%;
+            box-shadow: 2px 2px 4px var(--color);
+        }
+        #form{
+            padding: 0 0;
+        }
+}
+
+
+
+
